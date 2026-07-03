@@ -18,7 +18,6 @@ const commentName = document.getElementById('commentName');
 const commentText = document.getElementById('commentText');
 const commentsList = document.getElementById('commentsList');
 
-// Lógica do Botão Curtir
 likeBtn.addEventListener('click', () => {
     if (!usuarioCurtiu) {
         likes++;
