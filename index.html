@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>BLOG DO BREJA</h1>
+            <p>Compartilhando minha vida</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h2 class="post-title">Sobre mim</h2>
+            <div class="post-meta">Postado em 2 de Julho de 2026 por Rainiker</div>
+            
+            <div class="post-content">
+                <p>Olá! Me chamo Rainiker, tenho 15 anos, eu sou um menino muito engraçado e divertido, gosto de fazer um pouco de tudo, ja joguei bola desde pequeno, hoje em dia gosto mais de resenhar com meus parceiro e andar de moto, entre outros</p>
+
+                <h2>Onde nasci?</h2>
+                <p>Nasci e moro em Londrina-PR</p>
+
+                <h2>Onde estudo?</h2>
+                <p>Já estudei em diversas escolas, hoje em dia estudo no Cecm Fernando de Barros</p>
+            </div>
+
+            <div class="post-actions">
+                <button class="action-btn like-btn" id="likeBtn">
+                    <i class="fa-solid fa-thumbs-up"></i> Curtir (<span id="likeCount">0</span>)
+                </button>
+                <button class="action-btn dislike-btn" id="dislikeBtn">
+                    <i class="fa-solid fa-thumbs-down"></i> Descurtir (<span id="dislikeCount">0</span>)
+                </button>
+            </div>
+
+            <hr>
+
+            <div class="comments-section">
+                <h3>Comentários</h3>
+                
+                <form id="commentForm" class="comment-form">
+                    <input type="text" id="commentName" placeholder="Seu nome" required>
+                    <textarea id="commentText" placeholder="Escreva seu comentário aqui..." rows="3" required></textarea>
+                    <button type="submit">Enviar Comentário</button>
+                </form>
+
+                <div id="commentsList" class="comments-list">
+                    <div class="comment-item">
+                        <strong>Maria Silva</strong>
+                        <p>Que blog bacana! Parabéns pela iniciativa.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido com ❤️ por Mim.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
